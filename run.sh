@@ -3,6 +3,14 @@
 # Ubuntuを更新する
 sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y
 
+# Pythonライブラリをインストールする
+uv add cdsapi
+uv add netCDF4
+uv add xarray
+uv add matplotlib
+uv add geopy
+uv add cartopy
+
 # ディレクトリ設定
 script_dir="$(cd "$(dirname "$0")" && pwd)"
 base_dir="$(dirname "$script_dir")"
