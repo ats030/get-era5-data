@@ -12,7 +12,7 @@ def configure():
     # 圧力レベル
     lev = 1000
 
-    # ディレクトリ
+    # プロジェクトディレクトリ
     dir = '/home/ats030/pCloudDrive/Python/get-era5-data'
 
     return dt1, dt2, lev, dir

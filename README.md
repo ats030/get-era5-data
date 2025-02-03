@@ -6,9 +6,12 @@
 
 - uvのインストール
     - https://zenn.dev/ats030/articles/how-to-use-uv-on-ubuntu
-
 - PythonでERA5のデータを取得するための設定
     - https://zenn.dev/ats030/articles/get-era5-data-in-python
+
+## 設定ファイル
+
+```configure.py```で、「データ抽出期間」や「プロジェクトディレクトリ」をお好みに合わせて設定してください。
 
 ## 生成されるファイル
 
