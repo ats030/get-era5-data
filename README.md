@@ -2,16 +2,27 @@
 
 本プロジェクトは、ERA5の大気再解析データを収集するPythonのサンプルです。
 
-## 事前準備
+＃実行手順
+
+### 事前準備
 
 - uvのインストール
     - https://zenn.dev/ats030/articles/how-to-use-uv-on-ubuntu
 - PythonでERA5のデータを取得するための設定
     - https://zenn.dev/ats030/articles/get-era5-data-in-python
 
-## 設定ファイル
+### 設定ファイル
 
 ```configure.py```で、「データ抽出期間」や「プロジェクトディレクトリ」をお好みに合わせて設定してください。
+
+### サンプルコードの実行
+
+上記ファイルを生成するには、以下を実行します。
+
+uvで実行する場合、```uv init```を実行したディレクトリで以下のコマンドを実行します。
+```bash
+uvx sh <プロジェクトディレクトリ>/run.sh
+```
 
 ## 生成されるファイル
 
@@ -43,12 +54,3 @@
 - 合成データ
     - Temperature & Relative humidity at 1000 hPa -> Absolute humidity at 1000 hPa (g/m3)
     - 10m u-component of wind & 10m v-component of wind -> Wind speed (m/s)
-
-## サンプルコードの実行
-
-上記ファイルを生成するには、以下を実行します。
-
-uvで実行する場合、```uv init```を実行したディレクトリで以下のコマンドを実行します。
-```bash
-uvx sh <プロジェクトディレクトリ>/run.sh
-```
